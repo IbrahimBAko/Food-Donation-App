@@ -108,7 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   const SizedBox(height: 16),
                   TextFormField(
                     controller: _confirmPasswordController,
-                    obscureText: _obscureConfirmPassword, //Toggle confirm password visibilty
+                    obscureText: _obscureConfirmPassword, //Toggle confirm password visibility
 
                     decoration: InputDecoration(
                       labelText: 'Confirm Password',
