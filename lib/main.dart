@@ -8,7 +8,7 @@ Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (kIsWeb) {
     await Firebase.initializeApp(
-        options: FirebaseOptions(
+        options: const FirebaseOptions(
             apiKey: "AIzaSyD1zfRSk_jAVXwzfJQUndInzTlFS6wjxVM",
             appId: "1:1020445495074:web:7217840c9bb0120a179f7b",
             messagingSenderId: "1020445495074",
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Food Waste App',
       home: SplashScreen(
